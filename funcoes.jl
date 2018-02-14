@@ -125,3 +125,9 @@ function move(C,i,j)
     # Célula vizinha É cancerígena: não se move 
     return C
 end
+
+# Gera 'mapa de calor' a partir de matrizes (serão as imagens utilizadas)
+function figura(U)
+    pyplot()
+    heatmap(U,aspect_ratio=1)
+end
